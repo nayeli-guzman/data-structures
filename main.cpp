@@ -3,12 +3,37 @@
 //#include "circular_list.h"
 //#include "circular_array.h"
 //#include "hash_table.h"
-#include "tree.h"
+//#include "tree.h"
+#include "avl_tree.h"
 #include <list>
 //using namespace std;
 
 int main(){
 
+    avl_tree<int> tree;
+    
+    tree.insert(35);
+    tree.insert(25);
+    tree.insert(17);
+    
+    tree.insert(10);
+    tree.insert(28);
+    tree.insert(27);
+    /*
+    tree.insert(26);
+    tree.insert(30);
+    tree.insert(29);
+    tree.insert(31);
+    tree.insert(23);
+    tree.insert(20);
+    tree.insert(24);
+*/
+
+
+    tree.in_order();
+
+
+    /*
     tree<int> tree;
 
     tree.insert(35);
@@ -84,7 +109,7 @@ int main(){
     tree.insert(26);
 
     std::cout << tree.height();
-
+*/
     /*
     std::cout << tree.find(6) << std::endl;
     std::cout << tree.find(12) << std::endl;
