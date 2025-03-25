@@ -83,7 +83,7 @@ int main(){
     tree.insert(27);
     tree.insert(26);
 
-    std::cout << tree.height();
+    std::cout << tree.height() << std::endl;
 
     /*
     std::cout << tree.find(6) << std::endl;
